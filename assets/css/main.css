@@ -1292,6 +1292,7 @@ input, select, textarea {
 
 		#header .logo {
 			background-image: url("../../images/prflimage.png");
+			background-size: 100%;
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
