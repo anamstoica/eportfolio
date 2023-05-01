@@ -1,11 +1,6 @@
 /* @import url(fontawesome-all.min.css); */
 /* @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"); */
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 @font-face {
   font-family: 'Mona Sans';
   src:
@@ -153,7 +148,6 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
