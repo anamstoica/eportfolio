@@ -1291,6 +1291,7 @@ input, select, textarea {
 			}
 
 		#header .logo {
+			background-image: url("../../images/profileimage.png")
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
