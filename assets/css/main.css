@@ -152,6 +152,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
+		font-family: 'Mona Sans', sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
