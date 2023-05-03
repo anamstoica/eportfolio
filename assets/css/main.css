@@ -25,7 +25,7 @@ html {
 
 @font-face {
   font-family: 'Fraktion Mono';
-  src: url('../webfonts/PPFraktionMono-Bold.otf') format('otf');
+  src: url('../webfonts/FraktionMono-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: bold;
 }
