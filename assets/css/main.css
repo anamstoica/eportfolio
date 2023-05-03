@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Mona Sans';
   src: url('../webfonts/Mona-Sans-Regular.woff2') format('woff2');
   font-weight: normal;
@@ -21,10 +21,14 @@
 
 html {
   font-family: 'Mona Sans', sans-serif;
+} */
+
+p {
+  font-family: 'Mona Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Mona Sans', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: monospace !important;
 }
 
 html, body, div, span, applet, object,
