@@ -25,6 +25,7 @@ html {
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Mona Sans', sans-serif;
+  font-stretch: 75%;
 }
 
 html, body, div, span, applet, object,
