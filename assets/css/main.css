@@ -24,8 +24,8 @@ html {
 } */
 
 @font-face {
-  font-family: 'Fraktion Sans';
-  src: url('../webfonts/Fraktion-Bold.woff2') format('woff2');
+  font-family: 'Fraktion Mono';
+  src: url('../webfonts/PPFraktionMono-Bold.otf') format('otf');
   font-weight: bold;
   font-style: bold;
 }
@@ -35,7 +35,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fraktion Sans' !important;
+  font-family: 'Fraktion Mono' !important;
 }
 
 html, body, div, span, applet, object,
