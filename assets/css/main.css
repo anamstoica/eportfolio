@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Mona Sans';
   src: url('../webfonts/Mona-Sans-Regular.woff2') format('woff2');
   font-weight: normal;
@@ -17,15 +17,14 @@
   src: url('../webfonts/Mona-Sans-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: bold;
-}
+} */
 
 html {
-  font-family: 'Mona Sans';
+  font-family: 'Fraktion Mono', monospace;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Mona Sans', sans-serif;
-  font-stretch: 75%;
+  font-family: 'Fraktion Mono', monospace;
 }
 
 html, body, div, span, applet, object,
