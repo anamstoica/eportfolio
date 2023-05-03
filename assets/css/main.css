@@ -23,12 +23,19 @@ html {
   font-family: 'Mona Sans', sans-serif;
 } */
 
+@font-face {
+  font-family: 'Fraktion Sans';
+  src: url('../webfonts/Fraktion-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: bold;
+}
+
 p {
   font-family: 'Mona Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Courier'!important;
+  font-family: 'Fraktion Sans' !important;
 }
 
 html, body, div, span, applet, object,
