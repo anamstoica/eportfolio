@@ -1660,7 +1660,6 @@ input, select, textarea {
 		max-width: 100%;
 		margin-top: 2rem;
 		text-align: center;
-		color: #BAECBF;
 	}
 
 		#footer .copyright {
@@ -1669,7 +1668,6 @@ input, select, textarea {
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
-			color: #BAECBF;
 		}
 
 		body.is-article-visible #footer {
