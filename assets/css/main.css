@@ -58,6 +58,7 @@ section, summary, time, mark, audio, video {
 
 a {
   font-family: 'Fraktion Mono' !important;
+  font-weight: bold;
 }
 
 article, aside, details, figcaption, figure,
