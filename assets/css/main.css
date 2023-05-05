@@ -769,12 +769,14 @@ input, select, textarea {
 		}
 
 	ul {
+	        list-style-type: none;
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
 	}
 
 		ul li {
+		        list-style-type: none;
 			padding-left: 0.5em;
 		}
 
