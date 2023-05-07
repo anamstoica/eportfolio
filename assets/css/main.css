@@ -740,12 +740,11 @@ input, select, textarea {
 	ol {
 		list-style: decimal;
 		margin: 0;
-		padding: 0;
 	}
 
-/* 		ol li {
+		ol {
 			padding-left: 0.25em;
-		} */
+		}
 
 	ul {
 	        list-style-type: none;
