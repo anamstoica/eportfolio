@@ -1,3 +1,5 @@
 ### MSc Computer Science ePortfolio 
 
-The following eportfolio is based on the work carried out on the MSc Computer Science programme at the University of Essex.
+The following ePortfolio is based on the work carried out on the MSc Computer Science programme at the University of Essex.
+
+Check my ePortfolio [here] (anamstoica.github.io/eportfolio/).
