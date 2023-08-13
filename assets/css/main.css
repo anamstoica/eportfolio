@@ -115,6 +115,12 @@ a {
   font-weight: bold;
 }
 
+.social-media {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 article,
 aside,
 details,
