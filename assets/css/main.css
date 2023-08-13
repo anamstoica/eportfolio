@@ -121,6 +121,10 @@ a {
   margin: 0 auto;
 }
 
+.social-media .social-icon {
+  margin-right: 10px;
+}
+
 article,
 aside,
 details,
