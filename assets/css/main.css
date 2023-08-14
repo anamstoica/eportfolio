@@ -117,12 +117,9 @@ a {
 
 .social-media {
   display: flex;
+  gap: 10px;
   align-items: center;
   margin: 0 auto;
-}
-
-.social-icon {
-  padding-right: 20px;
 }
 
 article,
