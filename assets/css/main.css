@@ -1,5 +1,5 @@
 html {
-  font-family: "Mona Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 @font-face {
@@ -10,7 +10,7 @@ html {
 }
 
 p {
-  font-family: "Mona Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 h1,
@@ -128,6 +128,28 @@ a {
 .social-media .social-icon:last-child {
   margin-right: 0;
 }
+
+/* Add transition for social-media icons to fade in on page load */
+.social-media .social-icon {
+  transition: opacity 0.325s ease-in-out;
+}
+body.is-preload .social-media .social-icon {
+  opacity: 0;
+}
+
+@keyframes fadeInIcon {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.social-media .social-icon {
+  opacity: 0;
+  animation: fadeInIcon 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+.social-media .social-icon:nth-child(1) { animation-delay: 0.1s; }
+.social-media .social-icon:nth-child(2) { animation-delay: 0.3s; }
+.social-media .social-icon:nth-child(3) { animation-delay: 0.5s; }
 
 article,
 aside,
@@ -262,7 +284,7 @@ input,
 select,
 textarea {
   color: #ffffff;
-  font-family: "Mona Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.65;
