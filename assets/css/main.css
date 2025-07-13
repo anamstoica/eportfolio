@@ -121,6 +121,14 @@ a {
   margin: 0 auto;
 }
 
+/* Add spacing between top social media icons */
+.social-media .social-icon {
+  margin-right: 1.25rem;
+}
+.social-media .social-icon:last-child {
+  margin-right: 0;
+}
+
 article,
 aside,
 details,
