@@ -1743,6 +1743,11 @@ body.is-preload #header .content .inner {
   }
 }
 
+/* Remove underline from link text */
+a {
+  text-decoration: none !important;
+}
+
 /* Footer */
 
 #footer {
