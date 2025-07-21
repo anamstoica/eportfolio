@@ -42,7 +42,7 @@
           <img src="../../images/module3-unit3-exercise1.png" alt="Covariance Pearson Correlation" width="500" height="600"/>
           <img src="../../images/module3-unit3-exercise1.1.png" alt="Covariance Pearson Correlation" width="500" height="500"/>
           <p>
-            To observe how changes in data points impact correlation and regression, you can manipulate a few aspects of ... You're adding a noise term: 10 * randn(...) + 50. The 10 is the standard deviation (amount of noise). This should lower the correlation, since data2 becomes less dependent on data1.
+            In order to observe how changes in data points impact correlation, I have manipulated data1 by adding a higher standard deviation of + 50, which shifts all values upward, while lowering the Pearson correlation. This change will result in a lower correlation, since data2 becomes less dependent on data1.
           </p>
           
           <br />
@@ -50,7 +50,7 @@
           <img src="../../images/module3-unit3-exercise1.2.png" alt="Covariance Pearson Correlation" width="500" height="600"/>
           <img src="../../images/module3-unit3-exercise1.3.png" alt="Covariance Pearson Correlation" width="500" height="500"/>
           <p>
-            This should lead to a negative correlation, potentially around -1 with low noise.
+           I have experimented by using the negative of data1 in order to invert the direction of the relationship. This change will lead to a strong negative Pearson correlation. 
           </p>
           
           <br />
@@ -60,7 +60,7 @@
           <img src="../../images/module3-unit3-exercise2.png" alt="Linear Regression" width="900" height="500"/>
           <img src="../../images/module3-unit3-exercise2.1.png" alt="Linear Regression" width="500" height="400"/>
           <p>
-            This data currently shows a moderate negative correlation (Pearson’s r is around -0.76). You can manipulate the x and y values to test how different relationships affect the regression line and correlation.Strong Positive Correlation values added.
+            I have manipulated the x and y values in order to see how different relationships change and ultimately affect the regression line and correlation. By replacing x with a list of numbers that increase by 1 each step and y with twice for each corresponding x value, I have resulted in an example of a perfect linear relationship.
           </p>
 
           <br />
@@ -71,7 +71,7 @@
           <img src="../../images/module3-unit3-exercise3.png" alt=" Multiple Linear Regression" width="600" height="500"/>
           <img src="../../images/module3-unit3-exercise3.1.png" alt=" Multiple Linear Regression" width="600" height="400"/>
           <p>
-            Modifying the Weight, Volume, and CO2 values will directly impact Regression coefficients.Strengthening correlation between Weight and CO₂ - Strong positive correlation with Weight, smaller impact from Volume.
+            The following dataset includes three variables: Weight, Volume, and CO2 emissions. By adding a new set of values, I'm looking at how data directly impacts the regression coefficients. In this example, Weight and Volume increase proportionally with the CO2 level. The increases are proportional and consistent, implying a strong, linear, positive relationship between both Weight and CO2, and Volume and CO2.
           </p>
 
           <br />
@@ -79,14 +79,14 @@
           <h4 style="color: #9af8a3">
             Polynomial Regression
           </h4>
-          <img src="../../images/module3-unit3-exercise4.png" alt=" Multiple Linear Regression" width="700" height="300"/>
-          <img src="../../images/module3-unit3-exercise4.1.png" alt=" Multiple Linear Regression" width="700" height="400"/>
-          <img src="../../images/module3-unit3-exercise4.2.png" alt=" Multiple Linear Regression" width="1150" height="300"/>
+          <img src="../../images/module3-unit3-exercise4.png" alt=" Polynomial Regression" width="700" height="300"/>
+          <img src="../../images/module3-unit3-exercise4.1.png" alt=" Polynomial Regression" width="700" height="400"/>
+          <img src="../../images/module3-unit3-exercise4.2.png" alt=" Polynomial Regression" width="1150" height="300"/>
           <br />
-          <img src="../../images/module3-unit3-exercise4.3.png" alt=" Multiple Linear Regression" width="1100" height="300"/>
-          <img src="../../images/module3-unit3-exercise4.4.png" alt=" Multiple Linear Regression" width="500" height="400"/>
+          <img src="../../images/module3-unit3-exercise4.3.png" alt=" Polynomial Regression" width="1100" height="300"/>
+          <img src="../../images/module3-unit3-exercise4.4.png" alt=" Polynomial Regression" width="500" height="400"/>
           <p>
-            Outlier distortion.Curve bends up sharply to accommodate outlier.
+            This example shows how a single outlier can cause severe distortion in a polynomial regression model. The dataset contains x values ranging from 1 to 10, as well as matching y values ranging from 10 to 90 until the last point, where y = 300 introduces a significant outlier. While the first 9 data points show a clear linear trend, the outlier at x = 10 leads the regression curve to bend dramatically upward near the end. This creates a skewed model that no longer adequately captures the overall pattern of the data.
           </p>
           
     <!-- Scripts -->
