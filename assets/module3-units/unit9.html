@@ -17,122 +17,39 @@
     <div id="wrapper">
       <!-- Intro -->
       <article id="intro">
-        <h2 class="major">Introduction to Machine Learning</h2>
-        <p>
-          The objective of the induction module is to acquaint students with a
-          diverse range of digital resources, including but not limited to KOL,
-          University of Essex Online, and the Virtual Learning Environment
-          (VLE), Moodle. In addition, this module provides comprehensive support
-          pertaining to online learning and available resources, while also
-          familiarising students with the principles of critical thinking and
-          reflective learning. These foundational skills are essential for
-          success in subsequent modules, particularly those related to academic
-          writing and research proficiency.
-        </p>
-        <hr />
-        <h3>Learning Outcomes</h3>
-        <ul>
-          <li>
-            • Understand the purpose and structure of the course through
-            participation in the Welcome Session.
-          </li>
-          <li>
-            • Identify the key concepts and themes of the subject area covered
-            in the course.
-          </li>
-          <li>
-            • Develop effective online communication skills through
-            participation in the online Discussion Forum.
-          </li>
-          <li>
-            • Develop effective strategies for organising personal learning and
-            study time.
-          </li>
-          <li>
-            • Develop an understanding of academic writing principles and best
-            practices such as effective research methodologies and proper
-            referencing techniques.
-          </li>
-          <li>
-            • Apply the skills and knowledge gained in Week 1 to complete the
-            Induction Assignment successfully.
-          </li>
-        </ul>
-        <hr />
-        <h3>Forum Discussion</h3>
-        <h4 style="color: plum">
-          The use of ePortfolios in a postgraduate degree programme
-        </h4>
-        <p>
-          Working as a Senior Product Designer at GAN Integrity, I help global
-          organisations elevate business ethics through the design and
-          development of a complex Integrity SaaS Platform. My responsibilities
-          include but are not limited to product strategy, concept development,
-          user interface and experience design, and recently engaging with
-          front-end web technologies.
-        </p>
+        <h2 class="major">Introduction to Convolutional Neural Networks</h2>
+        <h3>Formative Activity</h3>
+          <h4 style="color: #9af8a3">
+            CNN Model Activity
+          </h4>
+          <p>
+            In this unit, the activity consisted of discussing an article on the ethical concerns of facial recognition and a small experiment consisting of testing a trained CNN model.
+          </p>
 
-        <p>
-          In order to effectively showcase academic achievements, skills, and
-          experiences in a comprehensive and organized manner (Lorenzo &
-          Ittelson, 2005), an e-portfolio is a powerful weapon that I am eager
-          to develop as a means to demonstrate growth and accomplishments to a
-          wider audience, such as potential employers or academic institutions
-          (Barrett, 2004). This hypothesis is further reinforced by a 2017 study
-          (Ring, Waugaman and Brackett, 2017), where more than 80% of inquired
-          employers found portfolios valuable for screening and hiring the right
-          people. Further reading leads me to conclude that digital portfolios
-          provide an avenue for developing a strong professional identity.
-        </p>
+          <p>
+            Facial recognition technology is being increasingly used by police and security forces worldwide. Despite its widespread use, it raises serious ethical and accuracy concerns. Some potential for valuable applications exists, for example the article by Wall (2019) mentions stopping terrorist attacks by identifying suspects in crowds, but there are significant risks associated, caused by a striking racial and gender bias. The article cites a situation of severely misidentifying individuals, with the model decreasing in accuracy the darker the skin tone, also misgendering women as men because of this. Like any other machine learning model waiting to be implemented following very promising studies, patience needs to be exercised, because what may seem like an excellent idea in theory can cause serious problems in real life. As the article also highlights, it is not a good idea to bring something so unpredictable in such sensitive fields like police and military.
+          </p>
 
-        <p>
-          My postgraduate e-portfolio would inherently be much more ambiguous
-          and advanced compared to that of an undergraduate (Jaekel, 2020),
-          demonstrating mastery within research, analysis, presentations,
-          teamwork, leadership and concrete practice.
-        </p>
+          <p>
+            Testing the CNN model proved to be easy, albeit not without errors. I ran the code using Google Colab, and one of the cells quickly failed to run because, as I learned, the function used was part of an older version of TensorFlow. Because I was using Google Colab and my computer might not deal so well with the code, I decided to change the line as follows:
+          </p>
 
-        <p>
-          I am familiar with creating a digital portfolio due to the nature of
-          my work, however, a challenging aspect will be navigating the
-          political process of curating and updating the content, as not all
-          work will be deemed ‘suitable enough’ to be displayed. Regular
-          reflection is needed to grasp insights into learning and professional
-          experiences (Barrett, 2004), which is an exciting challenge to take
-          on.
-        </p>
+          <pre>
+            <code>
+              # SHAPE --> (num_images,width,height,color_channels)
+              prediction = model.predict(my_image.reshape(1, 32, 32, 3))
+              predicted_class = np.argmax(prediction, axis=-1)[0]
+              LABEL_NAMES[predicted_class]
+            </code>
+          </pre>
 
-        <h4 style="color: plum">References:</h4>
-
-        <p>
-          Barrett, H. (2004). Electronic portfolios as multimedia resume.
-          Learning & Leading with Technology, 31(1), 6-11.<br />
-          Jaekel, J. (2020). Electronic Portfolios in Postgraduate Education.
-          European Journal of Open, Distance and E-Learning, 23(2), 130-147.<br />
-          Lorenzo, G., & Ittelson, J. (2005). An overview of e-portfolios.
-          EDUCAUSE learning initiative, 1-27.<br />
-          Ring, G. S., Waugaman, P. G., & Brackett, C. (2017). The value of
-          e-portfolios for employment purposes. Journal of Interactive Online
-          Learning, 15(1), 16-32.
-        </p>
-        <hr />
-        <h3>Assignment</h3>
-        <a
-          href="assets/documents/pg-induction-computing-assignment.pdf"
-          download
-          >PG Induction Computing Assignment (Click to Download)</a
-        >
-        <br>
-         <a
-          href="assets/documents/pg-induction-computing-assignment-feedback.pdf"
-          download
-          >PG Induction Computing Assignment Feedback (Click to Download)</a
-        >
+          <p>
+            After that, everything ran smoothly. I played with multiple images and found both errors and also perfectly true predictions:
+          </p>
+          <img src="../../images/module3-unit9-1.png" width="500" height="800"/>
+          <img src="../../images/module3-unit9-2.png" width="500" height="800"/>
       </article>
     </div>
-
-    <!-- BG -->
-    <div id="bg"></div>
 
     <!-- Scripts -->
     <script src="../js/jquery.min.js"></script>
