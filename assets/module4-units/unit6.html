@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ana Stoica Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="../css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload" style="background-image: url('../../images/bg.jpg')">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <article id="intro">
+        <h2 class="major">Working Together</h2>
+          <h4 style="color: #9af8a3">
+            Creating Agent Dialogues
+          </h4>
+      <p>
+          In multi-agent systems, intelligent agents cooperate, coordinate and make decisions without human intervention. Pieprzyca (2009) highlighted the role of Knowledge Query and Manipulation Language (KQML) performatives in structuring the information that these agents exchange. As Kone, Shimazu, and Nakajima (2000) explain, ACLs such as KQML define performative types to maintain a structured communication, allowing different agents to interpret and act upon messages consistently. KQML has also been applied in practical scenarios such as matchmaking, where messages are sent between agents to negotiate and share knowledge (Kuokka & Harada, 1996). These frameworks inspired the design of the dialogue presented below.
+        </p>
+
+        <p>
+          The following interaction takes place between two intelligent agents named Alice and Bob. Alice is an agent responsible for sourcing products, and Bob is an agent that manages stock levels in the warehouse. The communication is written using the Knowledge Query and Manipulation Language (KQML) and the Knowledge Interchange Format (KIF). KQML defines the structure of messages using a variety of performatives, like tell or eos, while KIF expresses the logical content behind them. 
+        </p>
+
+        <p>The dialogue below shows Alice asking Bob about the stock availability of 50 inch televisions, with a follow-up question about the number of HDMI slots they have. This is a typical example of agent-based computing, a dynamic scene of cooperation and exchange of knowledge to perform both simple and complex tasks.
+
+        </p>
+
+        <pre><code>
+          (ask-one
+ 	            :sender Alice
+                    :receiver Bob
+ 	            :reply-with id0
+ 	            :language KQML
+ 	            :ontology stock-ontology
+ 	            :content (stock “50 inch television” ?x)
+          )
+        </code></pre>
+        <br />
+        <pre><code>
+          (tell
+	            :sender Bob
+	            :receiver Alice
+	            :in-reply-to id0
+	            :language KQML
+	            :ontology stock-ontology
+	            :content (= (stock “50 inch television”) 31)
+          )
+        </code></pre>
+        <br />
+        <pre><code>
+          (ask-one
+ 	            :sender Alice
+                    :receiver Bob
+ 	            :reply-with id1
+ 	            :language KQML
+ 	            :ontology stock-ontology
+ 	            :content (hdmi-slots “50 inch television” ?x)
+          )
+        </code></pre>
+        <br />
+        <pre><code>
+          (tell
+	            :sender Bob
+	            :receiver Alice
+	            :in-reply-to id1
+	            :language KQML
+	            :ontology stock-ontology
+	            :content (= (hdmi-slots “50 inch television”) 2)
+          )
+        </code></pre>
+        <br />
+        <pre><code>
+          (eos
+                    :sender Alice
+	            :receiver Bob
+	            :in-reply-to id1
+          ) 
+        </code></pre>
+        <details>
+          <summary style="color: #9af8a3"> References </summary>
+
+            <ul>
+              <li> Kone, M. T., Shimazu, A. and Nakajima, T. (2000) ‘The state of the art in agent communication languages’, Knowledge and Information Systems, 2, pp. 259–284. Available at: https://link.springer.com/article/10.1023/A:1019163015141. (Accessed: 17 October 2025). </li> 
+
+              <li>Kuokka, D. and Harada, L. (1996) ‘On using KQML for matchmaking’, Lockheed Research Labs, Palo Alto, CA. Available at: https://www.sciencedirect.com/science/article/pii/S0004370297000599. (Accessed: 17 October 2025). </li>
+
+              <li>Pieprzyca, W. (2009) ‘Analysis of communication processes in the multi–agent systems’, Annales UMCS Informatica AI, IX(1), pp. 111–122. Available at: https://doi.org/10.2478/v10065-009-0008-x. (Accessed: 17 October 2025).</li>
+            </ul>
+        </details>
+      </div>   
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/browser.min.js"></script>
+    <script src="../js/breakpoints.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
